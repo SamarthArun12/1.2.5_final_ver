@@ -8,3 +8,8 @@ class entity:
 
     def get_skill(self, index):
         return self.skills[index]
+    
+    def take_damage(self, damage):
+        self.hp -= damage
+        return self.hp
+    
